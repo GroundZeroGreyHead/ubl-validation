@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  go-validator:
+    build: .
+    container_name: go-basex-validator
+    volumes:
+      - ./validation-artifacts:/basex/11.1/validation-artifacts
+    entrypoint:
+      [
+        "/usr/local/bin/go-basex-validator",
+        "/basex/11.1/validation-artifacts/xml/sample.xml",
+        "/basex/11.1/validation-artifacts/en16931-ubl-1.3.12/schematron/preprocessed/EN16931-UBL-validation-preprocessed.sch",
+      ]
