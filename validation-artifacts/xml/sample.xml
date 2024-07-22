@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+  <cbc:ID>INV123456</cbc:ID>
+  <cbc:IssueDate>2024-07-20</cbc:IssueDate>
+</Invoice>
